@@ -4,7 +4,8 @@
   "description": "Mercho Branding",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "start:prod": "NODE_ENV=production nodemon app.js",
     "watch:js": "parcel watch ./public/index.js --out-dir ./public --out-file bundle.js",
     "build:js": "parcel watch ./public/index.js --out-dir ./public --out-file bundle.js"
@@ -21,5 +22,8 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
