@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/de9b926cc3.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="components/hiddenNav.js" type="text/javascript" defer></script>
+    <script src="components/header2.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="contact.js" type="text/javascript" defer></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav-component></nav-component>
+    <hero-component></hero-component>
+    <section class="contact-us">
+      <h3>Send us a brief</h3>
+      <div class="contacts">
+        <div class="contact">
+          <div><i class="fa-regular fa-envelope"></i></div>
+          <h4>hello@merchobranding.com</h4>
+          <p>Our friendly team is here to help</p>
+        </div>
+        <div class="contact">
+          <div><i class="fa-solid fa-location-dot"></i></div>
+          <h4>2 Esomo Close, off Toyin Street, Ikeja</h4>
+          <p>Come say hello at our office</p>
+        </div>
+        <div class="contact">
+          <div><i class="fa-solid fa-phone"></i></div>
+          <h4>08033806340</h4>
+          <p>Mon-Fri from 8am to 5pm</p>
+        </div>
+      </div>
+
+      <h3>Get in touch</h3>
+      <p>Reach out, kindly fill out this form and we will get in touch</p>
+      <form class="contact-form" action="">
+        <div class="form-group">
+          <label for="">First name</label>
+          <input type="text" class="first-name" id="first-name" />
+          <p class="form-error"></p>
+        </div>
+        <div class="form-group">
+          <label for="">Last name</label>
+          <input type="text" class="last-name" id="last-name" />
+          <p class="form-error"></p>
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="email" id="email" />
+          <p class="form-error"></p>
+        </div>
+        <div class="form-group">
+          <label for=""> Phone</label>
+          <input type="text" class="phone" id="phone" />
+          <p class="form-error"></p>
+        </div>
+        <div class="form-group">
+          <label for="">Company</label>
+          <input type="text" class="company" id="company" />
+          <p class="form-error"></p>
+        </div>
+        <div class="form-group">
+          <label for="">Message</label>
+          <textarea
+            name="message"
+            class="message"
+            id="message"
+            cols="30"
+            rows="15"
+          ></textarea>
+          <p class="form-error"></p>
+        </div>
+        <button class="form-btn" type="submit">Send Message</button>
+      </form>
+    </section>
+    <div class="form-confirmation">
+      <div class="form-confirmation-inner">
+        <div class="confirmation-check">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2>Success🎉</h2>
+        <p>
+          We have received your message and you will hear back from us within 24
+          hours
+        </p>
+
+        <a href="index.html"
+          >Go Home <i class="fa-sharp fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+    <footer-component></footer-component>
+  </body>
+</html>

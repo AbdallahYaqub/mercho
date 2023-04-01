@@ -1,0 +1,470 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.about {
+  /* width: 100vw;
+  height: 100vh; */
+  /* background-color: #1a1a1a; */
+  color: aliceblue;
+  /* overflow-y: scroll; */
+}
+
+/* .section:nth-child(even) {
+  background-color: green;
+} */
+
+.section {
+  /* width: 100vw;
+  height: 100%; */
+  background-color: #1a1a1a;
+}
+
+.hero-header {
+  font-size: 3rem !important;
+  text-shadow: 0 10px 10px #084c2e !important;
+  /* margin-top: -5rem !important; */
+}
+
+/* About */
+
+.about-svg {
+  width: 90%;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.floating-header {
+  /* font-size: 10rem; */
+  text-shadow: 0 10px 10px #084c2e;
+  display: inline-block;
+  color: #ffffff;
+  /* text-transform: capitalize; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 12rem;
+  left: 15rem;
+  line-height: 6rem;
+  font-family: "Yrsa", serif;
+  text-transform: uppercase;
+}
+
+/* Who Is mercho */
+.who-is-header {
+  color: #fff;
+  font-family: "Work sans", Serif;
+  margin-bottom: 3rem;
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: capitalize;
+  transition: all 1s;
+  z-index: 100;
+}
+
+.who-is-header.fixed {
+  position: fixed !important;
+  top: 3rem;
+  left: 0;
+  top: 30%;
+  background-color: #084c2e;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.who-is-header.fixed::after {
+  display: none;
+}
+
+.who-is-header.fixed span {
+  color: #fff;
+}
+
+.who-is-header::after {
+  width: 5%;
+  height: 240%;
+  content: "";
+  display: table;
+  border-bottom: 3px solid #084c2e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.who-is {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  /* margin-top: 5rem; */
+  align-items: center;
+  background-attachment: fixed;
+  /* padding: 10%; */
+}
+
+.who-is > .fp-overflow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.who-is-text {
+  flex-basis: 40%;
+  font-family: "Work sans", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-style: italic;
+}
+
+.who-is-text .green {
+  font-size: 2rem;
+}
+
+.who-is-img {
+  /* background-image: url("img/dummy.jpeg"); */
+  flex-basis: 40%;
+}
+
+.who-is-img img {
+  width: 100%;
+}
+
+.who-is-breaktext {
+  width: 70%;
+  height: 15rem;
+  margin: 0 auto;
+  /* background-color: #084c2e; */
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.who-is-breaktext p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Work sans", sans-serif;
+  line-height: 2.5rem;
+  font-style: italic;
+}
+
+.who-is-breaktext p .green {
+  font-size: 2rem;
+}
+
+.who-is-breakimg {
+  width: 80%;
+  height: 40rem;
+  margin: 0 auto;
+  background-color: #084c2e;
+  margin-bottom: 8rem;
+  background: url("img/dummy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fp-arrow {
+  display: none !important;
+}
+
+/* What & Why */
+.what-why > .fp-overflow {
+  display: flex;
+  padding: 8rem;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.what-why-div {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.3s;
+  /* animation: fadeIn 5s; */
+}
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.what-why-div:nth-of-type(2) {
+  /* flex-direction: column; */
+  /* flex-basis: 50%; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.what-why-div h2 {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Work sans", sans-serif;
+  line-height: 3rem;
+  font-style: italic;
+  font-size: 2.3rem;
+}
+
+.what-why-div p {
+  font-family: "open sans", sans-serif;
+  width: 40%;
+  font-size: 1.4rem;
+}
+
+.what-why-div p:nth-of-type(2) {
+  text-align: right;
+}
+
+.about-header {
+  color: #fff;
+  font-family: "Work sans", Serif;
+  /* margin-bottom: 3rem; */
+  position: absolute;
+  top: 30%;
+  left: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  transition: all 1s;
+  background-color: #084c2e;
+  padding: 0.5rem 2rem;
+}
+
+.why-header {
+  right: 0;
+  left: auto;
+}
+
+.img-divider-section .fp-overflow {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.img-divider img {
+  width: 80%;
+}
+
+.img-divider-section .fp-overflow div:nth-of-type(2) {
+  /* background-image: url("img/dummy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  width: 100%;
+  margin-bottom: 15rem;
+}
+
+.img-divider-section .fp-overflow div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-divider-section .fp-overflow div:nth-of-type(1) img {
+  width: 16rem;
+}
+.img-divider-section .fp-overflow div {
+  height: 60vh;
+}
+/* .img-divider {
+  width: 80%;
+} */
+.img-divider-section p {
+  font-size: 1.7rem;
+  /* text-transform: capitalize; */
+  letter-spacing: 0.02rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  /* line-height: 3.5rem; */
+  line-height: 4rem;
+  display: flex;
+  align-items: center;
+}
+/* .img-divider-section p,
+
+
+ */
+
+/* Approach */
+
+.approach-slide .fp-overflow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14rem;
+  position: relative;
+}
+
+.approach-text,
+.approach-img {
+  flex-basis: 42%;
+}
+
+.approach-text h2 {
+  font-size: 3rem;
+  color: #084c2e;
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.approach-text p {
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: "open sans", sans-serif;
+  font-weight: 200;
+  line-height: 1.8rem;
+  /* margin-bottom: 1.5rem; */
+}
+
+/* .approach-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+} */
+
+.approach-img {
+  /* border: 10px solid black; */
+  border-radius: 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.approach-img::after {
+  width: 100%;
+  height: 100%;
+  background-color: #084c2e;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  content: "";
+}
+.approach-img img {
+  width: 100%;
+  /* height: 100%; */
+  /* backface-visibility: hidden; */
+}
+
+.arrows {
+  position: absolute;
+  top: 12rem;
+  right: 15rem;
+  /* transform: translateY(-100%); */
+  z-index: 101;
+}
+.arrows i {
+  color: #084c2e;
+  font-size: 2.5rem;
+  cursor: pointer;
+  /* font-weight: 00; */
+}
+
+.arrows i:nth-of-type(2) {
+  margin-left: 0.8rem;
+}
+
+/* Philosophy */
+.philosophy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11rem;
+  margin-bottom: 27rem;
+  position: relative;
+}
+
+.philosophy-container::after {
+  width: 60%;
+  display: table;
+  content: "";
+  position: absolute;
+  bottom: -12rem;
+  border-bottom: 5px solid #084c2e;
+}
+
+.philosophy-inner-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.philosophy {
+  font-size: 7rem;
+  font-family: "open sans", sans-serif;
+  border: 2px solid #084c2e;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  /* padding: 5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  position: relative;
+}
+
+.philosophy-span {
+  font-size: 1rem;
+  color: #084c2e;
+  display: none;
+  font-weight: 700;
+}
+
+.philosophy-inner-container:hover .philosophy {
+  border: none;
+  transform: translateX(-20vw);
+}
+
+.philosophy-inner-container:hover .philosophy-span {
+  display: inline;
+}
+
+.philosophy-inner-container:hover .philosophy-text {
+  /* right: -20vw; */
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.philosophy-text {
+  font-size: 1.2rem;
+  position: absolute;
+  width: 30rem;
+  font-family: "Work sans", sans-serif;
+  right: 0;
+  transform: translateX(50%);
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+  font-style: italic;
+}

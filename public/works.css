@@ -1,0 +1,87 @@
+.hero-img {
+  background: url("img/work1.jpeg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom !important;
+}
+
+.hero-header {
+  font-size: 3rem !important;
+  text-shadow: 0 10px 10px #084c2e !important;
+  /* margin-top: -20rem !important; */
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+
+.hero-container {
+  height: 140vh !important;
+}
+
+.works {
+  width: 100vw;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.all-works a {
+  color: #000 !important;
+}
+
+.projects {
+  margin-top: -10rem !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero-header {
+    font-size: 2.5rem !important;
+    margin-top: 10rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero-header {
+    margin-top: 0 !important;
+    text-shadow: 0 0 15px #fff !important;
+    text-align: center;
+    top: auto !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero-container {
+    height: 100vh !important;
+  }
+
+  .projects {
+    margin-top: 2rem !important;
+  }
+
+  .first-project {
+    margin-bottom: 0;
+  }
+
+  .works {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-header {
+    font-size: 2.5rem !important;
+    margin-top: 0rem !important;
+    text-shadow: 0 0 15px #fff !important;
+    text-align: center;
+  }
+
+  .hero-header {
+    top: 0;
+  }
+
+  .works {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .first-project {
+    height: 22rem;
+  }
+}
