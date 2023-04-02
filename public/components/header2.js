@@ -144,129 +144,129 @@ class Hero extends HTMLElement {
             //   // margin-top: -5.5rem;
             // }
 
-            .nav-toggle {
-              width: 2.9rem;
-              height: 2.9rem;
-              // background-color: red;
-              display: none;
-              flex-direction: column;
-              justify-content: space-between;
-              cursor: pointer;
-              padding: 0.7rem;
-              border-radius: 50%;
-              transition: all 0.8s;
-              position: relative;
-              z-index: 10000;
-              transition: all 0.5s;
-            }
+            // .nav-toggle {
+            //   width: 2.9rem;
+            //   height: 2.9rem;
+            //   // background-color: red;
+            //   display: none;
+            //   flex-direction: column;
+            //   justify-content: space-between;
+            //   cursor: pointer;
+            //   padding: 0.7rem;
+            //   border-radius: 50%;
+            //   transition: all 0.8s;
+            //   position: relative;
+            //   z-index: 10000;
+            //   transition: all 0.5s;
+            // }
 
-            .nav-toggle:hover {
-              background-color: #f1f1f16e;
-            }
+            // .nav-toggle:hover {
+            //   background-color: #f1f1f16e;
+            // }
 
-            .toggle-bar {
-              width:100%;
-              height: 10%;
-              background-color: #fff;
-              transform: translateX(0);
-              transition: all 0.5s;
-              position: relative;
-              // animation-duration: 1s;
-            }
+            // .toggle-bar {
+            //   width:100%;
+            //   height: 10%;
+            //   background-color: #fff;
+            //   transform: translateX(0);
+            //   transition: all 0.5s;
+            //   position: relative;
+            //   // animation-duration: 1s;
+            // }
 
-            @keyframes toggle2 {
-              0% {
-                transform: rotateZ(0);
-              }
+            // @keyframes toggle2 {
+            //   0% {
+            //     transform: rotateZ(0);
+            //   }
 
-              80% {
-                transform: rotateZ(90deg);
-              }
+            //   80% {
+            //     transform: rotateZ(90deg);
+            //   }
 
-              100% {
-                transform: rotateZ(45deg);
-              }
-            }
+            //   100% {
+            //     transform: rotateZ(45deg);
+            //   }
+            // }
 
-            @keyframes deactivateToggle2 {
-              0% {
-                transform: rotateZ(45deg);
-              }
+            // @keyframes deactivateToggle2 {
+            //   0% {
+            //     transform: rotateZ(45deg);
+            //   }
 
-              80% {
-                transform: rotateZ(90deg);
-              }
+            //   80% {
+            //     transform: rotateZ(90deg);
+            //   }
 
-              100% {
-                transform: rotateZ(0);
-              }
-            }
+            //   100% {
+            //     transform: rotateZ(0);
+            //   }
+            // }
 
-            @keyframes toggle {
-              0% {
-                transform: translate(-50%, -50%);
-              }
+            // @keyframes toggle {
+            //   0% {
+            //     transform: translate(-50%, -50%);
+            //   }
 
-              100% {
-                transform: translate(-50%, -50%) rotateZ(-90deg);
-              }
+            //   100% {
+            //     transform: translate(-50%, -50%) rotateZ(-90deg);
+            //   }
               
-              // 100% {
-              //   transform: translate(-50%, -50%) rotateZ(45deg);
-              // }
-            }
+            //   // 100% {
+            //   //   transform: translate(-50%, -50%) rotateZ(45deg);
+            //   // }
+            // }
             
-            @keyframes deactivateToggle {
-              0% {
-                transform: translate(-50%, -50%) rotateZ(-90deg);
-              }
+            // @keyframes deactivateToggle {
+            //   0% {
+            //     transform: translate(-50%, -50%) rotateZ(-90deg);
+            //   }
 
-              100% {
-                transform: translate(-50%, -50%);
-              }
+            //   100% {
+            //     transform: translate(-50%, -50%);
+            //   }
               
-              // 100% {
-              //   transform: translate(-50%, -50%) rotateZ(45deg);
-              // }
-            }
+            //   // 100% {
+            //   //   transform: translate(-50%, -50%) rotateZ(45deg);
+            //   // }
+            // }
 
-            .toggle-bar-2.toggle-active {
-              animation-name: toggle2;
-              animation-duration: 1s;
-              animation-fill-mode: forwards;
-            }
+            // .toggle-bar-2.toggle-active {
+            //   animation-name: toggle2;
+            //   animation-duration: 1s;
+            //   animation-fill-mode: forwards;
+            // }
             
-            .toggle-bar-2.toggle-active.deactivate {
-              animation-name: deactivateToggle2;
-              animation-duration: 1s;
-              animation-fill-mode: forwards;
-              // animation-direction: reverse;
-            }
+            // .toggle-bar-2.toggle-active.deactivate {
+            //   animation-name: deactivateToggle2;
+            //   animation-duration: 1s;
+            //   animation-fill-mode: forwards;
+            //   // animation-direction: reverse;
+            // }
 
-            .toggle-bar-2::after {
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
-              content: "";
-            }
+            // .toggle-bar-2::after {
+            //   width: 100%;
+            //   height: 100%;
+            //   position: absolute;
+            //   left: 50%;
+            //   top: 50%;
+            //   transform: translate(-50%, -50%);
+            //   content: "";
+            // }
             
-            .toggle-bar-2.toggle-active::after {
-              background-color: #fff;
-              animation-name: toggle;
-              animation-duration: 1s;
-              animation-fill-mode: forwards;
-            }
+            // .toggle-bar-2.toggle-active::after {
+            //   background-color: #fff;
+            //   animation-name: toggle;
+            //   animation-duration: 1s;
+            //   animation-fill-mode: forwards;
+            // }
             
-            .toggle-bar-2.toggle-active.deactivate::after {
-              background-color: none;
-              animation-name: deactivateToggle;
-              animation-duration: 1s;
-              animation-fill-mode: forwards;
-              // animation-direction: reverse !important;
-            }
+            // .toggle-bar-2.toggle-active.deactivate::after {
+            //   background-color: none;
+            //   animation-name: deactivateToggle;
+            //   animation-duration: 1s;
+            //   animation-fill-mode: forwards;
+            //   // animation-direction: reverse !important;
+            // }
             
             .hero-container {
                 width: 100vw;
@@ -372,8 +372,12 @@ class Hero extends HTMLElement {
             }
 
             @media screen and (max-width: 1200px) {
-                .nav-link, .nav-cta a {
-                  font-size: 0.8rem;
+              
+              .hero-header {
+                font-size: 1.3rem;
+              }
+              .nav-link, .nav-cta a {
+                font-size: 0.8rem;
               }
             }
             
@@ -408,12 +412,25 @@ class Hero extends HTMLElement {
 
               .hero-header {
                 z-index: 100;
-                position: absolute;
-                left: 50%;
-                top: 30%;
-                transform: translateX(-50%);
+                // position: absolute;
+                // left: 50%;
+                // top: 30%;
+                // transform: translateX(-50%);
                 font-size: 2.6rem;
                 line-height: 4.5rem;
+              }
+              .hero-header-1 {
+                margin-top: 5.5rem;
+              }
+
+              .hero-text {
+                height: 100%;
+                padding-left: 5rem;
+                width: 100%;
+                margin-top: 5.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center
               }
 
               .text-container {
@@ -425,9 +442,17 @@ class Hero extends HTMLElement {
                 font-size: 3rem;
                 text-align: center;
               }
+
+              .cta-link:link, .cta-link:visited {
+                font-size: 0.8rem;
+            }
             }
 
             @media screen and (max-width: 750px) {
+              // .nav-toggle {
+              //   display: flex !important;
+              // }
+
               .hero-header {
                 width: 100%;
                 text-align: center;

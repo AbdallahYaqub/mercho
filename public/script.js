@@ -27,18 +27,19 @@ const toggleBar = document.querySelector(".nav-toggle");
 const toggleBar1 = document.querySelector(".toggle-bar-1");
 const toggleBar2 = document.querySelector(".toggle-bar-2");
 const toggleBar3 = document.querySelector(".toggle-bar-3");
-// console.log(toggleBar1);
+console.log(toggleBar);
 
-let active = false;
+let active = 0;
 
 toggleBar.addEventListener("click", () => {
-  if (!active) {
-    // console.log("Sharp");
+  if (active === 0) {
+    console.log("Sharp");
     toggleBar2.classList.remove("toggle-active");
     toggleBar2.classList.remove("deactivate");
 
     toggleBar1.style.transform = "translateX(25px)";
     toggleBar1.style.opacity = "0";
+    console.log(toggleBar1);
 
     toggleBar3.style.transform = "translateX(-25px)";
     toggleBar3.style.opacity = "0";
@@ -50,9 +51,9 @@ toggleBar.addEventListener("click", () => {
     // navHidden.style.transform = "translateY(0)";
     nav.style.backgroundColor = "#1a1a1a";
 
-    // navHidden.style.opacity = "1";
+    navHidden.style.opacity = "1";
 
-    active = true;
+    active = 1;
   } else {
     toggleBar1.style.transform = "translateX(0)";
     toggleBar1.style.opacity = "1";
@@ -68,6 +69,6 @@ toggleBar.addEventListener("click", () => {
     nav.style.backgroundColor = "transparent";
     navHidden.classList.remove("show");
     // navHidden.style.display = "none";
-    active = false;
+    active = 0;
   }
 });

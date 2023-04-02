@@ -4,6 +4,67 @@ new fullpage("#fullpage", {
   scrollHorizontally: true,
   sectionsColor: ["#1a1a1a"],
 
+  afterLoad: function (origin, destination, direction, trigger) {
+    const nav = document.querySelector("header.header-hidden");
+    if (destination.index !== 0) {
+      nav.style.display = "block";
+    } else {
+      nav.style.display = "none";
+    }
+
+    // const navHidden = document.querySelector(".nav-hidden");
+
+    // const toggleBar = document.querySelector(".nav-toggle");
+    // const toggleBar1 = document.querySelector(".toggle-bar-1");
+    // const toggleBar2 = document.querySelector(".toggle-bar-2");
+    // const toggleBar3 = document.querySelector(".toggle-bar-3");
+
+    // let active = 0;
+    // console.log(active);
+
+    // toggleBar.addEventListener("click", () => {
+    //   if (active === 0) {
+    //     console.log("Sharp");
+    //     toggleBar2.classList.remove("toggle-active");
+    //     toggleBar2.classList.remove("deactivate");
+
+    //     toggleBar1.style.transform = "translateX(25px)";
+    //     toggleBar1.style.opacity = "0";
+    //     console.log(toggleBar1);
+
+    //     toggleBar3.style.transform = "translateX(-25px)";
+    //     toggleBar3.style.opacity = "0";
+
+    //     // toggleBar2.style.transform = "rotateZ(90deg)";
+    //     toggleBar2.classList.add("toggle-active");
+
+    //     navHidden.classList.add("show");
+    //     // navHidden.style.transform = "translateY(0)";
+    //     nav.style.backgroundColor = "#1a1a1a";
+
+    //     navHidden.style.opacity = "1";
+
+    //     active = 1;
+    //   } else {
+    //     toggleBar1.style.transform = "translateX(0)";
+    //     toggleBar1.style.opacity = "1";
+
+    //     toggleBar3.style.transform = "translateX(0)";
+    //     toggleBar3.style.opacity = "1";
+
+    //     // toggleBar2.style.animationName = "toggle2";
+    //     // toggleBar2.style.animationDirection = "reverse";
+    //     // toggleBar2.style.animationDuration = "1s";
+    //     toggleBar2.classList.add("deactivate");
+
+    //     nav.style.backgroundColor = "transparent";
+    //     navHidden.classList.remove("show");
+    //     // navHidden.style.display = "none";
+    //     active = 0;
+    //   }
+    // });
+  },
+
   afterRender: function () {
     const nav = document.querySelector("header.header");
     const heroContainer = document.querySelector(".hero-container");
@@ -39,74 +100,44 @@ heroText.innerHTML = `
     <h4 class = 'hero-header hero-header-2'>of a strong brand</h4>
   </div>
 
-  <div class="text-container" id="text-container"></div>
 `;
 
 // Typing text effect
-const texts = [
-  "Don’t get branded out",
-  "Stay ahead of your competition",
-  "Create product awareness",
-  "Attract customers with market insights",
-];
+// const texts = [
+//   "Don’t get branded out",
+//   "Stay ahead of your competition",
+//   "Create product awareness",
+//   "Attract customers with market insights",
+// ];
 
-let index = 0;
-let isDeleting = false;
-let text = "";
+// let index = 0;
+// let isDeleting = false;
+// let text = "";
 
-function type() {
-  const currentText = texts[index];
+// function type() {
+//   const currentText = texts[index];
 
-  if (isDeleting) {
-    text = currentText.substring(0, text.length - 1);
-  } else {
-    text = currentText.substring(0, text.length + 1);
-  }
+//   if (isDeleting) {
+//     text = currentText.substring(0, text.length - 1);
+//   } else {
+//     text = currentText.substring(0, text.length + 1);
+//   }
 
-  document.getElementById("text-container").innerHTML =
-    text + '<span class="cursor"></span>';
+//   document.getElementById("text-container").innerHTML =
+//     text + '<span class="cursor"></span>';
 
-  let typingSpeed = 150;
+//   let typingSpeed = 150;
 
-  if (!isDeleting && text === currentText) {
-    typingSpeed = 2000;
-    isDeleting = true;
-  } else if (isDeleting && text === "") {
-    isDeleting = false;
-    index = (index + 1) % texts.length;
-    typingSpeed = 500;
-  }
+//   if (!isDeleting && text === currentText) {
+//     typingSpeed = 2000;
+//     isDeleting = true;
+//   } else if (isDeleting && text === "") {
+//     isDeleting = false;
+//     index = (index + 1) % texts.length;
+//     typingSpeed = 500;
+//   }
 
-  setTimeout(type, typingSpeed);
-}
+//   setTimeout(type, typingSpeed);
+// }
 
-type();
-
-// Services
-const services = document.querySelectorAll(".service");
-
-const service1 = document.getElementById("service-1");
-const service2 = document.getElementById("service-2");
-
-const serviceImg1 = document.getElementById("services-img-1");
-const serviceImg2 = document.getElementById("services-img-2");
-
-const switchService = (e) => {
-  if (e.target === service1) {
-    service2.classList.remove("service-active");
-    service1.classList.add("service-active");
-
-    serviceImg2.classList.remove("img-active");
-    serviceImg1.classList.add("img-active");
-  } else {
-    service1.classList.remove("service-active");
-    service2.classList.add("service-active");
-
-    serviceImg1.classList.remove("img-active");
-    serviceImg2.classList.add("img-active");
-  }
-};
-
-services.forEach((service) => {
-  service.addEventListener("click", switchService);
-});
+// type();

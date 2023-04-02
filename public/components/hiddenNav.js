@@ -19,7 +19,7 @@ class hiddenNav extends HTMLElement {
                 }
                 .nav-hidden {
                     width: 100vw;
-                    height: calc(100vh - 5.5rem);
+                    height: calc(100vh - 5rem);
                     position: fixed;
                     bottom: 0;
                     left: 0;
@@ -76,6 +76,130 @@ class hiddenNav extends HTMLElement {
                 /* display: table; */
                 }
 
+                // .nav-toggle {
+                //     width: 2.9rem;
+                //     height: 2.9rem;
+                //     // background-color: red;
+                //     display: none;
+                //     flex-direction: column;
+                //     justify-content: space-between;
+                //     cursor: pointer;
+                //     padding: 0.7rem;
+                //     border-radius: 50%;
+                //     transition: all 0.8s;
+                //     position: relative;
+                //     z-index: 10000;
+                //     transition: all 0.5s;
+                //   }
+      
+                //   .nav-toggle:hover {
+                //     background-color: #f1f1f16e;
+                //   }
+      
+                //   .toggle-bar {
+                //     width:100%;
+                //     height: 10%;
+                //     background-color: #fff;
+                //     transform: translateX(0);
+                //     transition: all 0.5s;
+                //     position: relative;
+                //     // animation-duration: 1s;
+                //   }
+      
+                //   @keyframes toggle2 {
+                //     0% {
+                //       transform: rotateZ(0);
+                //     }
+      
+                //     80% {
+                //       transform: rotateZ(90deg);
+                //     }
+      
+                //     100% {
+                //       transform: rotateZ(45deg);
+                //     }
+                //   }
+      
+                //   @keyframes deactivateToggle2 {
+                //     0% {
+                //       transform: rotateZ(45deg);
+                //     }
+      
+                //     80% {
+                //       transform: rotateZ(90deg);
+                //     }
+      
+                //     100% {
+                //       transform: rotateZ(0);
+                //     }
+                //   }
+      
+                //   @keyframes toggle {
+                //     0% {
+                //       transform: translate(-50%, -50%);
+                //     }
+      
+                //     100% {
+                //       transform: translate(-50%, -50%) rotateZ(-90deg);
+                //     }
+                    
+                //     // 100% {
+                //     //   transform: translate(-50%, -50%) rotateZ(45deg);
+                //     // }
+                //   }
+                  
+                //   @keyframes deactivateToggle {
+                //     0% {
+                //       transform: translate(-50%, -50%) rotateZ(-90deg);
+                //     }
+      
+                //     100% {
+                //       transform: translate(-50%, -50%);
+                //     }
+                    
+                //     // 100% {
+                //     //   transform: translate(-50%, -50%) rotateZ(45deg);
+                //     // }
+                //   }
+      
+                //   .toggle-bar-2.toggle-active {
+                //     animation-name: toggle2;
+                //     animation-duration: 1s;
+                //     animation-fill-mode: forwards;
+                //   }
+                  
+                //   .toggle-bar-2.toggle-active.deactivate {
+                //     animation-name: deactivateToggle2;
+                //     animation-duration: 1s;
+                //     animation-fill-mode: forwards;
+                //     // animation-direction: reverse;
+                //   }
+      
+                //   .toggle-bar-2::after {
+                //     width: 100%;
+                //     height: 100%;
+                //     position: absolute;
+                //     left: 50%;
+                //     top: 50%;
+                //     transform: translate(-50%, -50%);
+                //     content: "";
+                //   }
+                  
+                //   .toggle-bar-2.toggle-active::after {
+                //     background-color: #fff;
+                //     animation-name: toggle;
+                //     animation-duration: 1s;
+                //     animation-fill-mode: forwards;
+                //   }
+                  
+                //   .toggle-bar-2.toggle-active.deactivate::after {
+                //     background-color: none;
+                //     animation-name: deactivateToggle;
+                //     animation-duration: 1s;
+                //     animation-fill-mode: forwards;
+                //     // animation-direction: reverse !important;
+                //   }
+
                 @media screen and (max-width: 750px) {                  
                     .header nav .nav-items,
                     .header-hidden nav .nav-items {
@@ -106,6 +230,11 @@ class hiddenNav extends HTMLElement {
                     </li>
                     </ul>
                     <a class="cta-link" href="#">Book a session</a>
+                </div>
+                <div class = "nav-toggle">
+                    <div class = 'toggle-bar toggle-bar-1'></div>
+                    <div class = 'toggle-bar toggle-bar-2'></div>
+                    <div class = 'toggle-bar toggle-bar-3'></div>
                 </div>
                 </nav>
             </header>    

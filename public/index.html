@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="index.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.css"
@@ -20,12 +19,44 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.js"
+      integrity="sha512-QQk/IzG9JgMlUT9Ymy8Zm6ddK4m766VRft7XPTtNrTsGballhLlEBqXZ/398PFjTKVGMoTjSvaDVe9aYph4SWQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="components/hiddenNav.js" type="text/javascript" defer></script>
     <script src="components/header2.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="index.js" type="text/javascript" defer></script>
+    <script src="script.js" type="text/javascript" defer></script>
     <title>Mercho Branding</title>
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader-text-div">
+        <h1 class="loader-text loader-text-1">
+          Don't Get
+          <span class="green">Branded</span>
+          Out
+        </h1>
+
+        <h1 class="loader-text loader-text-2">
+          Stay
+          <span class="green">Ahead</span>
+          Of Your Competition
+        </h1>
+
+        <h1 class="loader-text loader-text-3">
+          Attract Customers With
+          <span class="green">Market</span>
+          Insights
+        </h1>
+      </div>
+    </div>
+    <nav-component></nav-component>
     <div id="fullpage">
       <div class="section fp-auto-height">
         <hero-component></hero-component>
@@ -218,13 +249,5 @@
 
       <div class="section fp-auto-height"></div>
     </div>
-
-    <!-- <script src="script.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.18/fullpage.js"
-      integrity="sha512-QQk/IzG9JgMlUT9Ymy8Zm6ddK4m766VRft7XPTtNrTsGballhLlEBqXZ/398PFjTKVGMoTjSvaDVe9aYph4SWQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </body>
 </html>
