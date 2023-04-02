@@ -1,7 +1,6 @@
 new fullpage("#fullpage", {
   licenseKey: "gplv3-license",
   autoScrolling: true,
-  scrollHorizontally: true,
   sectionsColor: ["#1a1a1a"],
 
   afterLoad: function (origin, destination, direction, trigger) {
@@ -11,58 +10,6 @@ new fullpage("#fullpage", {
     } else {
       nav.style.display = "none";
     }
-
-    // const navHidden = document.querySelector(".nav-hidden");
-
-    // const toggleBar = document.querySelector(".nav-toggle");
-    // const toggleBar1 = document.querySelector(".toggle-bar-1");
-    // const toggleBar2 = document.querySelector(".toggle-bar-2");
-    // const toggleBar3 = document.querySelector(".toggle-bar-3");
-
-    // let active = 0;
-    // console.log(active);
-
-    // toggleBar.addEventListener("click", () => {
-    //   if (active === 0) {
-    //     console.log("Sharp");
-    //     toggleBar2.classList.remove("toggle-active");
-    //     toggleBar2.classList.remove("deactivate");
-
-    //     toggleBar1.style.transform = "translateX(25px)";
-    //     toggleBar1.style.opacity = "0";
-    //     console.log(toggleBar1);
-
-    //     toggleBar3.style.transform = "translateX(-25px)";
-    //     toggleBar3.style.opacity = "0";
-
-    //     // toggleBar2.style.transform = "rotateZ(90deg)";
-    //     toggleBar2.classList.add("toggle-active");
-
-    //     navHidden.classList.add("show");
-    //     // navHidden.style.transform = "translateY(0)";
-    //     nav.style.backgroundColor = "#1a1a1a";
-
-    //     navHidden.style.opacity = "1";
-
-    //     active = 1;
-    //   } else {
-    //     toggleBar1.style.transform = "translateX(0)";
-    //     toggleBar1.style.opacity = "1";
-
-    //     toggleBar3.style.transform = "translateX(0)";
-    //     toggleBar3.style.opacity = "1";
-
-    //     // toggleBar2.style.animationName = "toggle2";
-    //     // toggleBar2.style.animationDirection = "reverse";
-    //     // toggleBar2.style.animationDuration = "1s";
-    //     toggleBar2.classList.add("deactivate");
-
-    //     nav.style.backgroundColor = "transparent";
-    //     navHidden.classList.remove("show");
-    //     // navHidden.style.display = "none";
-    //     active = 0;
-    //   }
-    // });
   },
 
   afterRender: function () {
@@ -101,6 +48,83 @@ heroText.innerHTML = `
   </div>
 
 `;
+
+// Random background color
+const loaderDiv = document.querySelector(".loader-container");
+console.log(loaderDiv);
+
+const getRandomNumber = (maxNum) => {
+  return Math.floor(Math.random() * maxNum);
+};
+
+const getRandomColor = () => {
+  const h = getRandomNumber(360);
+  const s = getRandomNumber(100);
+  const l = getRandomNumber(100);
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+};
+
+const setBackgroundColor = () => {
+  const randomColor = getRandomColor();
+  loaderDiv.style.backgroundColor = randomColor;
+};
+
+setInterval(() => {
+  setBackgroundColor();
+}, 2500);
+
+// Nav Toggle
+// const navHidden = document.querySelector(".nav-hidden");
+
+// const toggleBar = document.querySelector(".nav-toggle");
+// const toggleBar1 = document.querySelector(".toggle-bar-1");
+// const toggleBar2 = document.querySelector(".toggle-bar-2");
+// const toggleBar3 = document.querySelector(".toggle-bar-3");
+
+// let active = 0;
+// console.log(active);
+
+// toggleBar.addEventListener("click", () => {
+//   if (active === 0) {
+//     console.log("Sharp");
+//     toggleBar2.classList.remove("toggle-active");
+//     toggleBar2.classList.remove("deactivate");
+
+//     toggleBar1.style.transform = "translateX(25px)";
+//     toggleBar1.style.opacity = "0";
+//     console.log(toggleBar1);
+
+//     toggleBar3.style.transform = "translateX(-25px)";
+//     toggleBar3.style.opacity = "0";
+
+//     // toggleBar2.style.transform = "rotateZ(90deg)";
+//     toggleBar2.classList.add("toggle-active");
+
+//     navHidden.classList.add("show");
+//     // navHidden.style.transform = "translateY(0)";
+//     nav.style.backgroundColor = "#1a1a1a";
+
+//     navHidden.style.opacity = "1";
+
+//     active = 1;
+//   } else {
+//     toggleBar1.style.transform = "translateX(0)";
+//     toggleBar1.style.opacity = "1";
+
+//     toggleBar3.style.transform = "translateX(0)";
+//     toggleBar3.style.opacity = "1";
+
+//     // toggleBar2.style.animationName = "toggle2";
+//     // toggleBar2.style.animationDirection = "reverse";
+//     // toggleBar2.style.animationDuration = "1s";
+//     toggleBar2.classList.add("deactivate");
+
+//     nav.style.backgroundColor = "transparent";
+//     navHidden.classList.remove("show");
+//     // navHidden.style.display = "none";
+//     active = 0;
+//   }
+// });
 
 // Typing text effect
 // const texts = [
