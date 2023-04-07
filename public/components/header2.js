@@ -300,41 +300,6 @@ class Hero extends HTMLElement {
               // margin-bottom: 13rem;
             }
             
-            /* Type text */
-            .text-container {
-              height: 6rem;
-              color: #ffffff;
-              text-transform: capitalize;
-              font-size: 2.5rem;
-              position: relative;
-              z-index: 100;
-              margin-bottom: -10rem;
-              font-weight: 800;
-            }
-            
-            .cursor {
-              display: inline-block;
-              width: 0.3rem;
-              height: 2.5rem;
-              vertical-align: bottom;
-              background-color: #f6f6f6;
-              animation: blink 0.2s infinite;
-            }
-            
-            @keyframes blink {
-              0% {
-                opacity: 0;
-              }
-            
-              50% {
-                opacity: 1;
-              }
-            
-              100% {
-                opacity: 0;
-              }
-            }
-            
             .hero-img {
               width: 70vw;
               height: 100vh;

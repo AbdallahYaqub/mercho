@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
+
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
     <!-- <script
       src="https://kit.fontawesome.com/de9b926cc3.js"
       crossorigin="anonymous"
@@ -22,8 +27,7 @@
       type="text/javascript"
       defer
     ></script>
-    <script src="components/hiddenNav.js" type="text/javascript" defer></script>
-    <script src="components/header2.js" type="text/javascript" defer></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="contact.js" type="text/javascript" defer></script>
     <script src="script.js" type="text/javascript" defer></script>
@@ -31,8 +35,7 @@
   </head>
   <body>
     <hero-component></hero-component>
-    <nav-component></nav-component>
-    <section class="contact-us">
+    <div class="contact-us">
       <h3>Send us a brief</h3>
       <div class="contacts">
         <div class="contact">
@@ -93,7 +96,7 @@
         </div>
         <button class="form-btn" type="submit">Send Message</button>
       </form>
-    </section>
+    </div>
     <div class="form-confirmation">
       <div class="form-confirmation-inner">
         <div class="confirmation-check">
@@ -111,5 +114,11 @@
       </div>
     </div>
     <footer-component></footer-component>
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </body>
 </html>

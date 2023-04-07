@@ -12,7 +12,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 const hiddenNavLinks = document.querySelectorAll(".nav-hidden-link");
 
 navLinks[3].classList.add("active");
-hiddenNavLinks[3].classList.add("hidden-active");
+hiddenNavLinks[3].classList.add("active");
 
 // Form
 const form = document.querySelector(".contact-form");

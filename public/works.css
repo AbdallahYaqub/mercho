@@ -13,22 +13,14 @@
   animation-duration: 3s;
 }
 
-.hero-container {
+/* .hero-container {
   height: 140vh !important;
-}
+} */
 
 .works {
   width: 100vw;
   padding-left: 6rem;
   padding-right: 6rem;
-}
-
-.all-works a {
-  color: #000 !important;
-}
-
-.projects {
-  margin-top: -10rem !important;
 }
 
 @media screen and (max-width: 1400px) {
@@ -79,9 +71,5 @@
   .works {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .first-project {
-    height: 22rem;
   }
 }

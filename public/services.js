@@ -10,9 +10,8 @@ const navLinks = document.querySelectorAll(".nav-link");
 const hiddenNavLinks = document.querySelectorAll(".nav-hidden-link");
 
 navLinks[2].classList.add("active");
-// console.log(navLinks[2]);
 
-hiddenNavLinks[2].classList.add("hidden-active");
+hiddenNavLinks[2].classList.add("active");
 
 // const activeService = document.querySelectorAll(".service-active");
 

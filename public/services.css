@@ -1,7 +1,9 @@
 .hero-header {
   font-size: 3rem !important;
   text-shadow: 0 10px 10px #084c2e !important;
-  /* margin-top: -5rem !important; */
+  /* margin-top: -20rem !important; */
+  animation-name: moveInLeft;
+  animation-duration: 3s;
 }
 
 .hero-img {

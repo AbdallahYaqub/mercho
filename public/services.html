@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="services.css" />
+
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
     <!-- <script
       src="https://kit.fontawesome.com/de9b926cc3.js"
       crossorigin="anonymous"
@@ -17,8 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="components/hiddenNav.js" type="text/javascript" defer></script>
-    <script src="components/header2.js" type="text/javascript" defer></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="services.js" type="text/javascript" defer></script>
     <script src="script.js" type="text/javascript" defer></script>
@@ -26,8 +30,7 @@
   </head>
   <body>
     <hero-component></hero-component>
-    <nav-component></nav-component>
-    <section class="services">
+    <div class="services">
       <div class="services-container">
         <div class="services-logo">
           <img src="img/logo-1.png" alt="Mercho Branding" />
@@ -361,7 +364,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <footer-component></footer-component>
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </body>
 </html>
